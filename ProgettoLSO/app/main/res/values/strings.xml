@@ -1,0 +1,94 @@
+<resources>
+
+    <!-- Activity connection !-->
+    <string name="activity_connection_txt_button">Connection</string>
+    <string name="activity_address">Address</string>
+    <string name="activity_port">Port</string>
+    <string name="activity_button_connection">Connection</string>
+
+
+    <!-- activity home-->
+    <string name="activity_textView_nomeApp">Drink it</string>
+    <string name="activity_textView_app">No metter where you are: whether you are at home, or in the office, or on the beach - we will find you and give you a drink.</string>
+    <string name="activity_button_sign_in">Sign in</string>
+    <string name="activity_button_sign_up">Sing Up</string>
+    <string name="activity_button_disconnect">LogOut</string>
+
+
+    <!-- fragment singUp-->
+    <string name="fragment_sign_up_textEdit_nomeApp">Drink It</string>
+    <string name="fragment_sign_up_text_input_email">E-mail</string>
+    <string name="fragment_sign_up_text_input_username">Username</string>
+    <string name="fragment_sign_up_text_input_password">Password</string>
+    <string name="fragment_sign_up_button_sign_up">Sign up</string>
+    <string name="fragment_sign_up_button_annull">Annull</string>
+
+
+    <!-- fragment login !-->
+    <string name="fragment_sign_in_textEdit_nomeApp">Drink It</string>
+    <string name="fragment_sign_in_text_input_username">Username</string>
+    <string name="fragment_sign_in_text_input_password">Password</string>
+    <string name="fragment_sign_in_button_sign_in">Sing in</string>
+
+
+    <!-- Fragment Menu !-->
+    <string name="fragment_home_nameApp">Drink It</string>
+    <string name="fragment_home_Cocktail">Cocktail</string>
+    <string name="fragment_home_Shake">Shake</string>
+    <string name="fragment_home_LogOut">LogOut</string>
+    <string name="fragment_home_Profile">Profile</string>
+    <string name="fragment_home_Cart">Cart</string>
+    <string name="nav_header_subtitle">You are not logged in yet!</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_drinks">Cocktail &amp; Shake</string>
+    <string name="menu_cart">Cart</string>
+
+
+    <!-- Fragment fragment_drinks !-->
+    <string name="fragment_drinks_welcom">Welcome to Drink In</string>
+    <string name="fragment_drinks_search">Search Your Favorite Drink</string>
+    <string name="fragment_drinks">Order and drink</string>
+    <string name="fragment_drinks_category">Categories</string>
+    <string name="fragment_drinks_cocktail">Cocktail</string>
+    <string name="fragment_drinks_shake">Shake</string>
+    <string name="fragment_drinks_not_login">You must login first!</string>
+
+
+    <!-- Fragment fragment_slideshow !-->
+    <string name="fragment_slideshow_total">Total:</string>
+    <string name="fragment_slideshow_totalItem">€0.0</string>
+    <string name="fragment_slideshow_customerDetails">Customer Details</string>
+    <string name="fragment_slideshow_tvPickup">Pickup</string>
+    <string name="fragment_slideshow_tvDelivery">Delivery</string>
+    <string name="fragment_slideshow_name">Enter your name</string>
+    <string name="fragment_slideshow_address">Enter your address</string>
+    <string name="fragment_slideshow_city">Enter your city</string>
+    <string name="fragment_slideshow_state">Enter your state</string>
+    <string name="fragment_slideshow_zip">Enter your cap(5 digits)</string>
+    <string name="fragment_slideshow_cart_details">Card Details</string>
+    <string name="fragment_slideshow_card_number">Enter Card Number</string>
+    <string name="fragment_slideshow_card_expiry">Enter Card expiry(mm-yyyy)</string>
+    <string name="fragment_slideshow_card_pin">Enter Card pin(3 digits)</string>
+    <string name="fragment_slideshow_cell">Enter your number cell(10 digits)</string>
+    <string name="fragment_slideshow_button_checkout">CheckOut</string>
+    <string name="fragment_slideshow_not_login">You must login first!</string>
+
+
+    <!-- Fragment viewholder_category !-->
+    <string name="fragment_viewholder_category">Category</string>
+
+
+    <!-- Fragment viewholder_drink !-->
+    <string name="fragment_viewholder_drink_name">title</string>
+    <string name="fragment_viewholder_drink_eur">€</string>
+    <string name="fragment_viewholder_drink_fee">0.0</string>
+    <string name="fragment_viewholder_drink_button_add">+add</string>
+
+
+    <!-- Fragment viewholder_cart !-->
+    <string name="fragment_viewholder_cart_name">title</string>
+    <string name="fragment_viewholder_cart_eur">€</string>
+    <string name="fragment_viewholder_cart_fee">0.0</string>
+    <string name="fragment_viewholder_drink_numberItem">1</string>
+
+</resources>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:id="@+id/fragment_drink1"
+    android:focusableInTouchMode="true"
+    tools:context=".ui.drinks.DrinksFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="733dp">
+
+
+                <TextView
+                    android:id="@+id/fragment_drinks_welcom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="76dp"
+                    android:layout_marginEnd="50dp"
+                    android:text="@string/fragment_drinks_welcom"
+                    android:textColor="#9C27B0"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/fragment_drinks_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_drinks"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="@+id/fragment_drinks_welcom"
+                    app:layout_constraintStart_toStartOf="@+id/fragment_drinks_welcom"
+                    app:layout_constraintTop_toBottomOf="@+id/fragment_drinks_welcom" />
+
+                <TextView
+                    android:id="@+id/fragment_drinks_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/fragment_drinks_category"
+                    android:textColor="#9C27B0"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/fragment_drinks_welcom"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fragment_drinks_subtitle"
+                    tools:visibility="invisible" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/fragment_drinks_recyclerView_category"
+                    android:layout_width="255dp"
+                    android:layout_height="83dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="50dp"
+                    android:paddingLeft="22dp"
+                    android:paddingRight="22dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fragment_drinks_category"
+                    tools:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/fragment_drinks_Cocktail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/fragment_drinks_cocktail"
+                    android:textColor="#9C27B0"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fragment_drinks_recyclerView_category"
+                    tools:visibility="invisible" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/fragment_drinks_recyclerView_cocktail"
+                    android:layout_width="410dp"
+                    android:layout_height="188dp"
+                    android:layout_marginTop="4dp"
+                    android:paddingStart="22dp"
+                    android:paddingEnd="22dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fragment_drinks_Cocktail"
+                    tools:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/fragment_drinks_Shake"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/fragment_drinks_shake"
+                    android:textColor="#9C27B0"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fragment_drinks_recyclerView_cocktail"
+                    tools:visibility="invisible" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/fragment_drinks_recyclerView_shake"
+                    android:layout_width="410dp"
+                    android:layout_height="188dp"
+                    android:layout_marginTop="4dp"
+                    android:paddingStart="22dp"
+                    android:paddingEnd="22dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fragment_drinks_Shake"
+                    tools:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/text_head"
+                    android:layout_width="378dp"
+                    android:layout_height="39dp"
+                    android:text="@string/fragment_drinks_not_login"
+                    android:textColor="#DF2214"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.515"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.665"
+                    tools:visibility="invisible" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar_drink"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="50dp"
+                    android:layout_height="52dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="@+id/fragment_drinks_recyclerView_shake"
+                    app:layout_constraintTop_toTopOf="@+id/fragment_drinks_recyclerView_shake"
+                    app:layout_constraintVertical_bias="0.812"
+                    android:indeterminateDrawable="@drawable/progress_bar_color" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

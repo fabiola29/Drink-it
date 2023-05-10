@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- FullScreen Theme -->
+    <style name="Theme.MaterialComponents.NoActionBar.FullScreen" parent="@style/Theme.MaterialComponents.NoActionBar">
+    </style>
+
+    <!-- Material Custom TextField Theme -->
+    <style name="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.Long" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+    </style>
+
+
+    <style name="Theme.ProgettoLSO.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="Theme.ProgettoLSO.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+</resources>

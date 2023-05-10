@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/activity_show_detail"
+    tools:context=".ui.drinks.Activity_show_detail">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        android:scrollbars="vertical"
+        tools:layout_editor_absoluteX="-5dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/show_detail_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="title"
+                android:textAlignment="center"
+                android:textColor="@color/purple"
+                android:textSize="34dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/show_detail_fee"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:text="€"
+                android:textAlignment="center"
+                android:textColor="#DC2B3A"
+                android:textSize="24dp">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/pic_show_detail"
+                android:layout_width="match_parent"
+                android:layout_height="228dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/DescriptionTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="DESCRIPTION"
+                android:textColor="@color/purple"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <ScrollView
+                android:id="@+id/SCROLLER_ID"
+                android:layout_width="match_parent"
+                android:layout_height="288dp"
+                android:fillViewport="true"
+                android:scrollbars="vertical">
+
+                <TextView
+                    android:id="@+id/show_detail_description"
+                    android:layout_width="390dp"
+                    android:layout_height="159dp"
+                    android:layout_margin="7dp"
+                    android:inputType="textMultiLine"
+                    android:scrollbars="vertical"
+                    android:singleLine="true"
+                    android:text="Description_Body"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="normal" />
+            </ScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/button_addToCart"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/button_add_cart"
+        android:elevation="3dp"
+        android:gravity="center"
+        android:text="Add to Cart"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

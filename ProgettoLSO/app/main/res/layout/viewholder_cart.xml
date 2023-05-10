@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginTop="20dp"
+    android:elevation="4dp"
+    android:background="@drawable/card_background">
+
+    <ImageView
+        android:id="@+id/pic_Cart"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/title_Cart"
+        android:layout_width="129dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/fragment_viewholder_cart_name"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/pic_Cart"
+        app:layout_constraintTop_toTopOf="@+id/pic_Cart" />
+
+    <ImageButton
+        android:id="@+id/minusCartBtn"
+        android:layout_width="26dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="4dp"
+        android:background="@color/transparent"
+        android:src="@drawable/less"
+        app:layout_constraintBottom_toBottomOf="@+id/pic_Cart"
+        app:layout_constraintStart_toStartOf="@+id/title_Cart" />
+
+    <TextView
+        android:id="@+id/numberItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/fragment_viewholder_drink_numberItem"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/minusCartBtn"
+        app:layout_constraintEnd_toStartOf="@+id/addCartBtn"
+        app:layout_constraintStart_toEndOf="@+id/minusCartBtn"
+        app:layout_constraintTop_toTopOf="@+id/minusCartBtn"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/addCartBtn"
+        android:layout_width="26dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="24dp"
+        android:src="@drawable/add"
+        app:layout_constraintBottom_toBottomOf="@+id/minusCartBtn"
+        app:layout_constraintStart_toEndOf="@+id/minusCartBtn"
+        app:layout_constraintTop_toTopOf="@+id/minusCartBtn"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/feeEachItem"
+        android:layout_width="50dp"
+        android:layout_height="23dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/fragment_viewholder_cart_fee"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/title_Cart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/title_Cart"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="12dp"
+        android:layout_height="23dp"
+        android:layout_marginEnd="48dp"
+        android:text="@string/fragment_viewholder_cart_eur"
+        android:textColor="@color/red"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/feeEachItem"
+        app:layout_constraintEnd_toEndOf="@+id/feeEachItem"
+        app:layout_constraintTop_toTopOf="@+id/feeEachItem"
+        app:layout_constraintVertical_bias="0.0"></TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

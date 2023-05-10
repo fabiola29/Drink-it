@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.progettolso">
+
+    <!-- Permessi necessari per l'uso generale dell'app -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name = "android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Drink It"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MaterialComponents.NoActionBar.FullScreen">
+        <activity
+            android:name=".ui.home.LoginActivity"
+            android:label="Login" />
+        <activity
+            android:name=".ui.drinks.Activity_show_detail"
+            android:label="show_detail" />
+        <activity
+            android:name=".Activity_connection"
+            android:label="Connessione al server " />
+        <activity
+            android:name=".ui.home.SingUpActivity"
+            android:label="Registrazione"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="Drink It"
+            android:theme="@style/Theme.ProgettoLSO.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
