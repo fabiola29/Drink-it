@@ -1,0 +1,1 @@
+gcc -o "LSO_server" ./LSO_server.o ./client.o -pthread

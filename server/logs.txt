@@ -1,0 +1,4 @@
+ > Nuova connessione accettata:[Client: 16.2.199.3] - Tue Apr 25 16:55:22 2023
+ > Registrazione del client 16.2.199.3 avvenuta con successo - Tue Apr 25 16:55:22 2023
+ > Login effettuato con successo:[Client: 16.2.199.3 - prova] - Tue Apr 25 16:55:22 2023
+ > Il client 16.2.199.3 si è disconnesso dal Server - Tue Apr 25 16:56:22 2023
